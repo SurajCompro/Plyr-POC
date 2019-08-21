@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+
+
+<video width="100%" controls id="myvideo">
+<source src="./media/View From A Blue Moon - Official Trailer (4K Ultra HD) - John Florence.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+<script>
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
+
+</body>
+</html>
+

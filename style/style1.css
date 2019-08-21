@@ -1,0 +1,220 @@
+.video-player{
+    /* margin: 1em;
+    padding: 1em; */
+}
+
+.video-container{
+    margin: 2em auto;
+    padding: 2em;
+    /* border: 2px solid red; */
+    display: flex;
+    /* background: #cfc1c1; */
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .video-container:hover .controls{
+    transform: translateY(0);
+    transition: all 0.5s;
+} */
+
+.video-container #myPlayer{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 840px;
+    flex-wrap: wrap;
+
+/*
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.5s;
+*/
+    z-index: 4;
+}
+
+.play_large{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    color: white;
+    font-size: 2em;
+}
+
+.buttons{
+    padding: 3px;
+    z-index: 10;
+    margin-left: 0em;
+}
+
+.buttons .btnsonbar{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btnsonbar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 1.5em;
+    color: white;
+    padding: 0em;
+    padding-bottom: 1.5em;
+}
+
+.icon_on_player .btnsonbar{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+}
+
+.btnsonbar #play_pause_glyph{
+    font-size: 2em;
+}
+
+#btnfwd{
+    margin-left: 14px;
+}
+
+
+
+
+
+
+.slidecontainer {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    padding-bottom: 5em;
+  }
+
+
+
+#currentTimeDisplay{
+    color: white;
+    margin-top: -18px;
+    padding: 10px;
+}
+#totalTimeDisplay{
+    color: white;
+    margin-top: -18px;
+    padding: 10px;
+}
+
+
+  
+  .slider {
+
+    background: linear-gradient(to right, #fff 0%, #8c8c8c 100%);
+
+
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: #8c8c8c;
+    outline: none;
+    opacity: 0.9;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.plyr__captions {
+    margin-bottom: 114px;
+}
+ 
+.plyr__captions .plyr__caption {
+    background:#00ffff;
+    border-radius: 3px;
+    color: black;
+    font-size: 17px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.plyr__controls {
+
+    border: 5px solid red;
+    height: 30%;
+    background-color: blue; 
+    background: green;
+
+}
+
+ */
+
+
+

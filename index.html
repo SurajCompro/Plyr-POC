@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    <link rel="stylesheet" href="style/style1.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css" integrity="sha256-3FfMfpeajSEpxWZTFowWZPTv7k3GEu7w4rQv49EWsEY=" crossorigin="anonymous" />
+</head>
+<body>
+
+
+<div class="video-player">
+    <div class="video-container" id="video-container">
+
+        <video poster="./media/photo-1511447333015-45b65e60f6d5.jpg" id="myPlayer" playsinline>
+            <source src="./media/View From A Blue Moon - Official Trailer (4K Ultra HD) - John Florence.mp4" type="video/mp4" />
+            <!-- <track kind="captions" label="English captions" src="./media/View from a Blue Moon subs.vtt" srclang="en" default /> -->
+            <track kind="captions" label="English captions" src="./media/View_from_a_Blue_Moon_subs.vtt" srclang="en" default />
+        </video>
+
+
+        <button class="play_large">
+            <i class="fas fa-play" id="play_large"></i>
+        </button>
+
+         <div class="controls">
+
+            <div class="slidecontainer" id="slidecontainer">
+                <span id="currentTimeDisplay">00:00</span>
+                <input class="slider" id="myRange" type="range" min="0" max="100" value="0">
+                <span id="totalTimeDisplay">00:00</span>
+            </div>
+
+
+
+
+            <div class="buttons">
+
+
+
+                <button class="btnsonbar" id="btnfastfwd"><i  class="glyphicon glyphicon-comment"></i></button>
+                <button class="btnsonbar" id="btnloop"><i  class="glyphicon glyphicon-retweet"></i></button>
+                <button class="btnsonbar" id="btnback"><i  class="fas fa-undo"></i></button>
+                <button class="btnsonbar" id="play_pause"><i id="play_pause_glyph" class="far fa-play-circle"></i></button>
+                <button class="btnsonbar" id="btnfwd"><i  class="fas fa-redo"></i></button>
+
+                <button class="btnsonbar" id="btnfullscr"><i  class="fas fa-expand"></i></button>
+                <button class="btnsonbar" id="btnsetting"><i  class="fas fa-cog"></i></button>
+
+            </div>
+        </div> 
+    </div>
+</div> 
+
+
+
+<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+<script src="script/script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+.youtube-container{
+
+    width: 200px;
+    height: 200px;
+}
+
+.vimeo-container{
+
+    width: 200px;
+    height: 200px;
+}
+
+.video-player{
+    margin: 1em;
+    padding: 1em;
+}
+
+.video-container{
+    margin: 2em auto;
+    padding: 2em;
+    border: 2px solid red;
+    display: flex;
+    background: #cfc1c1;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container:hover .controls{
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+.video-container #myPlayer{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.progress_bar{
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+}
+
+.actual-progress{
+    height: 10px;
+    width: 0;
+    background-color: orangered;
+}
+
+.buttons{
+    padding: 3px;
+}
+.buttons .btnsonbar{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btnsonbar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: orangered;
+    padding: 1em;
+}
+
+.icon_on_player .btnsonbar{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+}
+
+.icon_on_player #btnfwd{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    right: 100px;
+}
+
+
+
+
+
+
+.slidecontainer {
+    position: absolute;
+    z-index: 4;
+    width: 90%;
+  }
+  
+  .slider {
+
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+
+
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 50%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.plyr__captions{
+
+    border: 1px solid red;
+    margin-bottom: 8em; 
+
+}
+
+.plyr__caption{
+
+    border: 1px solid blue;
+    background: green !important;
+    color: yellow;
+    background-color: aqua;
+    font-size: 2em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.plyr__controls {
+
+    border: 5px solid red;
+    height: 30%;
+    background-color: blue; 
+    background: green;
+
+}
+
+ */
+
+
+
